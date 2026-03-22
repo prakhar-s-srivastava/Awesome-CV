@@ -11,53 +11,83 @@
 
 %---------------------------------------------------------
   \cventry
-    {R\&D Lead Engineer} % Job title
-    {Flamapp.ai} % Organization
+    {R\&D Lead Engineer, Flamapp.ai} % Role
+    {Talking Avatar} % Project
     {Bengaluru} % Location
-    {Apr. 2025 - Aug. 2025} % Date(s)
+    {Jan 2026 - Present} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\textbf{3D Reconstruction via Non-Markovian Process}: Reduced 3D mesh generation time from a single image by replacing Markovian diffusion with a single-shot latent generator at cost of text to 3D.}
-        \item {Leveraged \textbf{Hunyuan-2.1 VAE} with an attention-based latent predictor for faster outputs, \textbf{4x--6x} faster making it feasible for real-time AR use case.}
+      \begin{cvitems}
+        \item Led development of a real-time talking avatar system generating photorealistic video from a single image/video conditioned on audio.
+  \item Achieved <1.2s time-to-first-frame (TTFF) on two RTX 4090, with scalable 1080p–4K output.
+  \item Designed a distributed inference pipeline with multi-model batching, improving throughput and cost efficiency.
+  \item Reduced video generation cost to <\$0.26/min, competitive with state-of-the-art commercial systems.
+  \item Developed a novel multi-model architecture, contributing to the company's IP portfolio.
+  \item Achieved ~78\% fool rate in human evaluation (n=24), indicating strong perceptual realism.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {R\&D Lead Engineer} % Job title
-    {Flamapp.ai} % Organization
+    {R\&D Lead Engineer, Flamapp.ai} % Role
+    {3D Reconstruction via Non-Markovian Process} % Project
     {Bengaluru} % Location
-    {Aug. 2023 - Dec. 2024} % Date(s)
+    {Apr 2025 - Aug 2025} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\textbf{Differentiable Keypoint Extraction (Patent Filed) and ICP-based Image/3D Object Tracking}: Developed a lightweight, stable image tracking system \textbf{(SDK <260 KB)} and filed a patent (ALL-FL-P-IN 080 202541007309).}
-        \item {Designed a \textbf{differentiable, trainable} adaptive keypoint extraction algorithm outperforming \textbf{ORB, SIFT, and BRISK} enabling efficient SaaS and edge deployment and leading to SDK integration contracts.}
+      \begin{cvitems}
+        \item Led development of a 3D reconstruction system generating textured meshes from multi-view images/videos.
+        \item Designed a differentiable rendering pipeline enabling end-to-end optimization, reducing reliance on traditional bundle adjustment for faster camera parameter estimation.
+        \item Developed a single-shot architecture for joint geometry and texture generation in a single forward pass.
+        \item Leveraged a pretrained VAE with a custom loss function to improve texture fidelity and fine detail reconstruction.
+        \item Generated high-quality triangle meshes via Marching Cubes with accurate texture projection.
+        \item Achieved ~0.3 px reprojection error at 25 cm and >95\% text recovery rate for characters >0.3 cm.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {R\&D Engineer} % Job title
-    {Flamapp.ai} % Organization
+    {R\&D Lead Engineer, Flamapp.ai} % Role
+    {Differentiable Keypoint Extraction (Patent Filed) and ICP-based Image/3D Object Tracking} % Project
     {Bengaluru} % Location
-    {Jan. 2022 - Dec. 2022} % Date(s)
+    {Aug 2023 - Dec 2024} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\textbf{Hyper-Personalized Augmented Objects (Published Patent)}: Developed an object search system enabling accurate retrieval from visually similar objects and large databases when the query \textbf{object occupies a small portion of the input image} using embedding-based similarity matching and a \textbf{modified DeiT} architecture.}
-        \item {Contributed to Flamapp.ai's core product and published Patent: US20250014287A1.}
+      \begin{cvitems}
+        \item Led development of a production-grade SDK for real-time 6-DoF object pose estimation on embedded devices, given a reference 3D model.
+        \item Designed a differentiable, trainable keypoint extraction algorithm outperforming ORB, SIFT, and BRISK in robustness and efficiency.
+        \item Enabled reliable pose estimation for both rigid and planar objects using learned keypoints and geometric alignment.
+        \item Integrated an ICP-based refinement pipeline for accurate pose recovery under real-world conditions.
+        \item Optimized for edge deployment with size less than 260KB, resulted in SDK integration in production systems and commercial contracts.
+        \item Resulted in a patented approach deployed in one of the company’s core products.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {R\&D Engineer} % Job title
-    {Flamapp.ai} % Organization
+    {R\&D Engineer, Flamapp.ai} % Role
+    {Hyper-Personalized Augmented Objects (Published Patent)} % Project
     {Bengaluru} % Location
-    {Jan. 2023 - May 2023} % Date(s)
+    {Jan 2022 - Dec 2022} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\textbf{Method and System for Improvised Human Motion}: Improved monocular human motion tracking by applying \textbf{RNN-based} iterative correction under natural motion constraints, achieving more lifelike motion reconstructions.}
-        \item {Published Patent: WO2024189648A1 (non-inventor).}
+      \begin{cvitems}
+        \item Developed an object retrieval system for large-scale databases, enabling accurate matching when the query object occupies a small region of the input image.
+        \item Designed an embedding-based similarity pipeline using a modified DeiT architecture for robust feature extraction under clutter and partial visibility.
+        \item Improved retrieval performance for visually similar objects through enhanced representation learning and matching strategies like contrastive learning and triplet loss.
+        \item Contributed to a patented system (US20250014287A1) integrated into the company’s core product.
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {R\&D Engineer, Flamapp.ai} % Role
+    {Method and System for Improvised Human Motion} % Project
+    {Bengaluru} % Location
+    {Jan 2023 - May 2023} % Date(s)
+    {
+      \begin{cvitems}
+        \item Improved monocular human motion tracking using an RNN-based iterative correction framework under natural motion constraints.
+        \item Collected and utilized motion capture (MoCap, Rokoko) data to train and refine temporal motion models.
+        \item Enhanced motion realism and temporal consistency in reconstructed human poses.
+        \item Contributed to a patented system (WO2024189648A1) integrated into the company’s core product with industry veterans from Microsoft , ex VP of engineering of the company and researchers from IIIT-H.
+        \item Achived Joint Quaternion cosine distance loss of 0.05(Increasing in FK chains) for the joint angles and 0.01 for the root position with a total loss of 0.06 .
       \end{cvitems}
     }
 
